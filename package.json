@@ -14,7 +14,7 @@
   "dependencies": {
     "@tauri-apps/api": "^2",
     "@tauri-apps/plugin-shell": "^2",
-    "excalibur": "0.30.0-alpha.1267"
+    "excalibur": "~0.32.0"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^2",
