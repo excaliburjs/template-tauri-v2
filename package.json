@@ -7,18 +7,24 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "serve": "vite preview",
+    "test": "npm run build && npm run test:integration",
+    "test:integration": "playwright test",
+    "test:integration-update": "playwright test --update-snapshots=all",
     "tauri": "tauri",
     "tauri:dev": "tauri dev",
-    "tauri:android-dev": "tauri android dev"
+    "tauri:android-dev": "tauri android dev",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@tauri-apps/api": "^2",
-    "@tauri-apps/plugin-shell": "^2",
-    "excalibur": "~0.32.0"
+    "@tauri-apps/plugin-shell": "^2.2.1",
+    "excalibur": "^1.0.0"
   },
   "devDependencies": {
+    "@playwright/test": "1.63.0",
     "@tauri-apps/cli": "^2",
-    "vite": "^5.3.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vite": "8.3.6"
   }
 }

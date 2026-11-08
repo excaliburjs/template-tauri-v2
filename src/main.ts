@@ -5,6 +5,7 @@ const game = new ex.Engine({
   displayMode: ex.DisplayMode.FitScreenAndFill
 });
 const hello = new ex.Label({
+  name: 'Hello',
   text: 'Hello Tauri 2.0! 🦀💖🎉',
   pos: game.screen.center.sub(ex.vec(0, 100)),
   color: ex.Color.White,
